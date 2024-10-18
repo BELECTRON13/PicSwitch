@@ -23,7 +23,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-4. Open your web browser and navigate to `http://http://127.0.0.1:5000/`.
+4. Open your web browser and navigate to `http://127.0.0.1:5000/`.
 
 ## Usage
 
