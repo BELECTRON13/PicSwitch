@@ -26,4 +26,6 @@ def upload_file():
         output_filename = os.path.splitext(file.filename)[0] + 'png'
         output_path = os.path.join('outputs', output_filename)
         img.save(output_path, 'PNG')
-        
+
+        return render_template('result.html', output_filename=output_filename)
+    return 'Invalid file format. Please upload a JPEG/JPG file.'
