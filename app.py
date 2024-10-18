@@ -4,3 +4,5 @@ import os
 
 app = Flask(__name__)
 
+os.makedirs('uploads', exist_ok=True)
+os.makedirs('outputs', exist_ok=True)
