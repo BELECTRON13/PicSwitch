@@ -9,6 +9,9 @@ To run this mini project locally, follow these steps:
 ```bash
 git clone https://github.com/BELECTRON13/PicSwitch.git
 ```
+```bash
+cd PicSwitch
+```
 
 2. Install the required dependencies:
 ```bash
