@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>آپلود تصویر</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='upload.css') }}">
 </head>
 <body>
     <div class="container">
-        <h1>آپلود تصویر JPG برای تبدیل به PNG</h1>
+        <h1>لطفا تصویر موردنظر خود را جهت تغییر فرمت آپلود کنید</h1>
         <form action="/upload" method="post" enctype="multipart/form-data">
             <input type="file" name="file" accept=".jpg,.jpeg" required>
             <input type="submit" value="آپلود و تبدیل">
     </form>
-    </div class="message" id="message"></div
-    <script src="{{ url_for('static', filename='upload-script.js') }}"></script>
+    </div class="message" id="message"></div>
+    <script src="{{ url_for('static', filename='upload.js') }}"></script>
 </body>
 </html>
