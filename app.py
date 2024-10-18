@@ -21,4 +21,9 @@ def upload_file():
     if file and (file.filename.endswith('.jpg') or file.filename.endswith('.jpeg')):
         input_path = os.path.join('uploads', file.filename)
         file.save(input_path)
+
+        img = Image.open(input_path)
+        output_filename = os.path.splitext(file.filename)[0] + 'png'
+        output_path = os.path.join('outputs', output_filename)
+        img.save(output_path, 'PNG')
         
