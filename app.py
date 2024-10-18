@@ -33,3 +33,6 @@ def upload_file():
 @app.route('/download/<filename>')
 def download_file(filename):
     return send_file(os.path.join('outputs', filename), as_attachment=True)
+
+if __name__ == '__main__':
+    app.run(debug=True)
