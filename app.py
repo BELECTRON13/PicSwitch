@@ -6,3 +6,7 @@ app = Flask(__name__)
 
 os.makedirs('uploads', exist_ok=True)
 os.makedirs('outputs', exist_ok=True)
+
+@app.route('/')
+def upload_form():
+    return render_template('upload.html')
