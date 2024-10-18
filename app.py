@@ -23,7 +23,7 @@ def upload_file():
         file.save(input_path)
 
         img = Image.open(input_path)
-        output_filename = os.path.splitext(file.filename)[0] + 'png'
+        output_filename = os.path.splitext(file.filename)[0] + '.png'
         output_path = os.path.join('outputs', output_filename)
         img.save(output_path, 'PNG')
 
