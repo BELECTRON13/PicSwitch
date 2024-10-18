@@ -29,3 +29,7 @@ def upload_file():
 
         return render_template('result.html', output_filename=output_filename)
     return 'Invalid file format. Please upload a JPEG/JPG file.'
+
+@app.route('/download/<filename>')
+def download_file(filename):
+    return send_file(os.path.join('outputs', filename), as_attachment=True)
